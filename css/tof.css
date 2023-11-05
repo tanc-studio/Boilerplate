@@ -1,0 +1,127 @@
+.tof-nav {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  z-index: 1000;
+  display: flex;
+  background-color: var(--bg-sec);
+}
+
+.tof-menu {
+    width: var(--nav-height);
+    height: var(--nav-height);
+    background-color: var(--bg-sec);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#tofBurger {
+    margin-top: .1rem;
+    width: var(--nav-height);
+    height: var(--nav-height);
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    z-index: 2;
+    overflow: hidden;
+}
+
+#tofBurger span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+    background-color: var(--bg-pri);
+}
+
+#tofBurger span:nth-child(1) {
+    top: 8px;
+}
+
+#tofBurger span:nth-child(2),
+#tofBurger span:nth-child(3) {
+    top: 20px;
+}
+
+#tofBurger span:nth-child(4) {
+    top: 24px;
+}
+
+#tofBurger.open span:nth-child(1) {
+    top: 28px;
+    width: 0%;
+    left: 50%;
+}
+
+#tofBurger.open span:nth-child(2) {
+    transform: rotate(42deg);
+    width: 185%;
+    top:40%;
+    left: -46%;
+}
+
+#tofBurger.open span:nth-child(3) {
+    transform: rotate(-42deg);
+    width: 185%;
+    top:40%;
+    left: -38%;
+}
+
+#tofBurger.open span:nth-child(4) {
+    top: 16px;
+    width: 0%;
+    left: 50%;
+}
+
+.icon-darkmode {
+ fill: var(--bg-pri);
+}
+
+
+
+
+/* SideNav ---------------------------------------*/
+
+.tof-sidenav {
+    height: 100%;
+    right: 0;
+    width: 0;
+    position: fixed;
+    top: var(--nav);
+    overflow-x: hidden;
+    transition: 0.5s;
+    background: var(--bg-sec);
+    z-index: 0;
+}
+
+.tof__link {
+    color: var(--link-sec);
+}
+
+.tof__sidenav__link:hover {
+    color: var(--link-sec-hover);
+}
+
+#tofSideNav.open {
+    width: 250px;
+    transition: 0.5s;
+}
+
+#tofSideNav.open + #main  {
+ right: 250px;
+ transition: right 0.5s;
+}
+
+
+
+
+#tofSideNav.open + .text {
+ background-color: blue;
+}
+

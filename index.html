@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=1.4.2"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/tof.css">
+  <!-- Rename -->
+  <link rel="stylesheet" href="css/component.css">
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp; z = document.getElementsByTagName("*"); for (i = 0; i < z.length; i++) {
+        elmnt = z[i]; file = elmnt.getAttribute("w3-include-html"); if (file) {
+          xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function () {
+            if (this.readyState == 4) { if (this.status == 200) { elmnt.innerHTML = this.responseText; } if (this.status == 404) { elmnt.innerHTML = "Page not found."; } elmnt.removeAttribute("w3-include-html"); includeHTML(); s }
+          }
+          xhttp.open("GET", file, true); xhttp.send(); return;
+        }
+      }
+    };
+  </script>
+  <title>Test</title>
+  <meta name="description" content="" />
+</head>
+<body>
+  <div class="display-none" w3-include-html="includes/svg-page.html"></div>
+  <header class="header"> 
+    <div class="header__inner wrap">
+        <nav class="nav">        
+          <a class="logo" href="index.html">
+            <!-- <svg class="icon-logo"><use href="#logo" xlink:href="#logo"></use></svg> -->
+          </a>
+          <div class="nav__section">
+            <div class="nav__links">
+              <a class="nav__link" href="" target="_blank">Link</a> 
+              <a class="nav__link" href="" target="_blank">Link</a> 
+              <a class="nav__link" href="" target="_blank">Link</a> 
+              <a class="nav__link" href="" target="_blank">Link</a> 
+            </div>
+          </div> 
+        </div>
+      </nav>        
+    </div>
+  </header>
+
+<!-- Site Main ------------>
+  <main id="main" class="main wrap">
+
+
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eius atque repudiandae adipisci eum. Ut laborum maiores, sequi adipisci ratione voluptas dolor beatae necessitatibus alias quibusdam modi ex suscipit itaque quasi explicabo deserunt doloremque culpa eum amet? Vero soluta eligendi doloribus voluptatum nam, nesciunt cupiditate quas similique iure officia, maiores dolores eveniet voluptatem beatae. Corporis ducimus iste commodi architecto hic tempora a rerum sed maxime! Eaque velit tempora facilis eveniet, illo corrupti, quo nihil aliquam animi, ut soluta nesciunt maxime. Iste cupiditate quia excepturi tempore perspiciatis veniam ipsam quaerat, minus animi architecto debitis illum earum cum repudiandae quod unde nulla.</p>
+
+
+
+
+
+
+    <!-- ToF ------------>
+
+
+
+  
+  
+
+
+    <!-- Site Main ------------>
+
+  </main>
+    <nav class="tof-sidenav" id="tofSideNav">
+      <a class="tof__link" href="page.html" >Page</a>
+      <a class="tof__link" href="#">Awwwbout</a>
+      <a class="tof__link" href="#">About</a>
+      <a class="tof__link" href="#">chevron_right</span>
+    </nav>
+
+  <div class="tof-nav">
+    <nav class="tof-menu">
+
+      <div id="tofBurger" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav> 
+    <!-- Darkmode -->
+    <button class="btn-round" id="darkmodeToggle" class="btn" type="button">
+      <span class="theme-icon-light display-none">
+        <svg class="icon icon-darkmode" height="100%" width="100%" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"/> </svg>
+      </span>
+      <span class="theme-icon-dark display-none">
+        <svg class="icon icon-darkmode" height="100%" width="100%" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"/> </svg> 
+      </span>
+    </button> 
+  </div>
+  <footer class="footer">
+    <div class="footer__inner wrap">
+      <div class="footer__section"></div>
+      <div class="footer__section"></div>
+    </div>
+  </footer>
+  <script>includeHTML();</script>
+  <script src="js/tof.js"></script>
+  <!-- Rename -->
+  <script src="js/component.js"></script>
+</body>
+
+</html>
+

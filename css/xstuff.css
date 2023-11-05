@@ -1,0 +1,46 @@
+
+
+/* 3 line Burher */
+
+#burger span:nth-child(1) {
+    top: 0px;
+}
+
+#burger span:nth-child(2),
+#burger span:nth-child(3) {
+    top: 12px;
+}
+
+#burger span:nth-child(4) {
+    top: 24px;
+}
+
+#burger.open span:nth-child(1) {
+    top: 28px;
+    width: 0%;
+    left: 50%;
+}
+
+#burger.open span:nth-child(2) {
+    transform: rotate(45deg);
+    width: 120%;
+    width: 160%;
+    top:40%;
+    left: -20%;
+    background-color: aqua;
+}
+
+#burger.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    width: 160%;
+    top:40%;
+    left: -20%;
+
+}
+
+#burger.open span:nth-child(4) {
+    top: 16px;
+    width: 0%;
+    left: 50%;
+
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Spartan:100,200,300,400&display=swap" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=1.4.2"></script>
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/site.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script>
+     function includeHTML() {var z, i, elmnt, file, xhttp; z = document.getElementsByTagName("*"); for (i = 0; i < z.length; i++) { elmnt = z[i]; file = elmnt.getAttribute("w3-include-html"); if (file) { xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function() {
+     if (this.readyState == 4) { if (this.status == 200) {elmnt.innerHTML = this.responseText;} if (this.status == 404) {elmnt.innerHTML = "Page not found.";} elmnt.removeAttribute("w3-include-html"); includeHTML(); s} }
+     xhttp.open("GET", file, true); xhttp.send(); return; }}};
+   </script>
+   <title>Test</title>
+   <meta name="description" content=""/>
+</head>
+  <body>
+   <div class="site-header" w3-include-html="includes/site-header.html"></div>
+    <main class="main wrap">
+
+
+
+
+
+      <!-- <svg class="icon"><use href="#icon-arrow" xlink:href="#icon-arrow"></use></svg> -->
+      <!-- <svg class="icon"><use href="#icon-times" xlink:href="#icon-times"></use></svg> -->
+      <!-- <svg class="icon"><use href="#icon-plus" xlink:href="#icon-plus"></use></svg> -->
+      <!-- <svg class="icon"><use href="#icon-minus" xlink:href="#icon-minus"></use></svg> -->
+      <!-- <svg class="icon"><use href="#icon-sun" xlink:href="#icon-sun"></use></svg> -->
+      <!-- <svg class="icon"><use href="#icon-wheel" xlink:href="#icon-wheel"></use></svg>   -->
+      <!-- <div class="box"></div> -->
+    
+
+
+
+
+
+
+     </main>
+    <div class="site-footer" w3-include-html="includes/site-footer.html"></div>
+    <script>includeHTML();</script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

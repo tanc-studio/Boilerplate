@@ -1,0 +1,146 @@
+/* Helper ----------------------------------------*/
+
+.display-none {
+    display: none !important;
+}
+
+
+/* Wrap ------------------------------------------*/
+
+.wrap-flush,
+.wrap,
+.wrap-md {
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+.wrap {
+    max-width: 1700px;
+}
+
+.wrap-md {
+    max-width: 800px;
+}
+
+
+
+/* Header ----------------------------------------*/
+
+.header {
+    height: var(--nav-height);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: var(--grey);
+}
+
+.header__inner {
+    height: 100%;
+    width: 100%;    
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Nav ----------------------------------------*/
+
+.nav {
+    height: var(--nav-height);
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: end;
+    background-color: red;
+}
+
+.nav__links {
+    background-color: antiquewhite;
+}
+
+.nav__link {
+    color: var(--link-sec);
+}
+
+.nav__link:hover {
+    color: var(--link-sec-hover);
+}
+
+
+/* main ------------------------------------------*/
+
+#main {
+    transition: left .5s;
+    left: 0;
+    position: relative;
+    transition: all .5s ease-out;
+    background-color: rgb(229, 235, 233);
+}
+
+
+/* Site Footer -----------------------------------*/
+
+.footer {
+    display: none;
+    padding: .5rem 0;
+    position: Fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-sec);
+}
+
+.footer__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+.footer__links {
+    display: flex;
+    gap: .5rem;
+}
+
+
+/* Icons --------------------------------------- */
+
+.icon {
+    width: 100%;
+    height: 100%;
+    fill: var(--sh-pri);
+}
+
+
+/* Buttons ------------------------------------- */
+button {
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn {
+    height: 2.5rem;
+    width: auto;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+}
+
+.btn-round {
+    width: 2rem;
+    height: 2rem;
+}
+
+
+/*  ----------------------------------- */
+
+
+
+
+
+
