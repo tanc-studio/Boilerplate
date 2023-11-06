@@ -20,15 +20,11 @@ toggle.onclick = function() {
 };
 
 
-// Navigation
-
-
 
 var isNavOpen = false;
-
 function toggleNav() {
   var toggleBtn = document.getElementById("tofBurger");
-  var sidenav = document.getElementById("tofSideNav");
+  var sidenav = document.getElementById("tofNavtray");
   if (isNavOpen) {
     sidenav.classList.remove("open");
     toggleBtn.classList.remove("open");
@@ -39,3 +35,5 @@ function toggleNav() {
     isNavOpen = true;
   }
 }
+
+

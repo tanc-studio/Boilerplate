@@ -44,3 +44,138 @@
     left: 50%;
 
 }
+
+
+
+<nav class="tof-sidenav" id="mySidenav">
+<a class="tof__link" href="page.html" >Page</a>
+<a class="tof__link" href="#">Awwwbout</a>
+<a class="tof__link" href="#">About</a>
+<a class="tof__link" href="#">chevron_right</span>
+</nav>
+
+
+<main id="main" class="main wrap">
+<p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+  apiente eius atque repudiandae adipisci eum. Ut laborum maiores, sequi adipisci 
+  ratione voluptas dolor beatae necessitatibus alias quibusdam modi ex suscipit
+   itaque quasi explicabo deserunt doloremque culpa eum amet? Vero soluta eligendi 
+   doloribus voluptatum nam, nesciunt cupiditate quas similique iure officia, 
+   maiores dolores eveniet voluptatem beatae. Corporis ducimus iste commodi archite
+   cto hic tempora a rerum sed maxime! Eaque velit tempora facilis eveniet, illo c
+   orrupti, quo nihil aliquam animi, ut soluta nesciunt maxime. Iste cupiditate quia e
+   xcepturi tempore perspiciatis veniam ipsam quaerat, minus animi architecto debitis illu
+   m earum cum repudiandae quod unde nulla.</p>
+</main>
+
+<nav class="tof-menu">
+<div id="tofBurger" onclick="toggleNav()">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+</nav> 
+
+
+
+
+  
+  
+  
+  /* SideNav ---------------------------------------*/
+  
+  .tof-sidenav {
+      height: 100%;
+      right: 0;
+      width: 0;
+      position: fixed;
+      top: var(--nav);
+      overflow-x: hidden;
+      transition: 0.5s;
+      background: var(--bg-sec);
+      z-index: 0;
+  }
+  
+  .tof__link {
+      color: var(--link-sec);
+  }
+  
+  .tof__sidenav__link:hover {
+      color: var(--link-sec-hover);
+  }
+  
+  #tofSideNav.open {
+   width: 250px;
+   transition: 0.5s;
+  }
+  
+  #tofSideNav.open + #main {
+   right: 250px;
+   transition: right 0.5s;
+  }
+  
+  #mySidenav.open {
+   width: 250px;
+   transition: 0.5s;
+  }
+  
+  #mySidenav.open + #main {
+   margin-right: 250px;
+   transition: right 0.5s;
+  }
+  
+  #main {
+   right: 0;
+   padding: 16px;
+   position: relative;
+   background-color: rgb(229, 235, 233);
+   transition: right .5s;
+  }
+
+
+
+  var isNavOpen = false;
+
+function toggleNav() {
+  var toggleBtn = document.getElementById("tofBurger");
+  var sidenav = document.getElementById("mySidenav");
+  if (isNavOpen) {
+    sidenav.classList.remove("open");
+    toggleBtn.classList.remove("open");
+    isNavOpen = false;
+  } else {
+    sidenav.classList.add("open");
+    toggleBtn.classList.add("open");
+    isNavOpen = true;
+  }
+}
+
+
+
+<div id="mainblob" class="mainblob wrap">
+<nav class="tof-sidenav" id="mySidenav">
+  <a class="tof__link" href="page.html" >Page</a>
+  <a class="tof__link" href="#">Awwwbout</a>
+  <a class="tof__link" href="#">About</a>
+  <a class="tof__link" href="#">chevron_right</span>
+</nav>
+<p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+  apiente eius atque repudiandae adipisci eum. Ut laborum maiores, sequi adipisci 
+  ratione voluptas dolor beatae necessitatibus alias quibusdam modi ex suscipit
+   itaque quasi explicabo deserunt doloremque culpa eum amet? Vero soluta eligendi 
+   doloribus voluptatum nam, nesciunt cupiditate quas similique iure officia, 
+   maiores dolores eveniet voluptatem beatae. Corporis ducimus iste commodi archite
+   cto hic tempora a rerum sed maxime! Eaque velit tempora facilis eveniet, illo c
+   orrupti, quo nihil aliquam animi, ut soluta nesciunt maxime. Iste cupiditate quia e
+   xcepturi tempore perspiciatis veniam ipsam quaerat, minus animi architecto debitis illu
+   m earum cum repudiandae quod unde nulla.</p>
+</div>
+
+<nav class="tof-menu">
+  <div id="tofBurger" onclick="toggleNav()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav> 
+  
