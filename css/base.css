@@ -7,110 +7,102 @@ article, aside, figure, figcaption, footer, header, menu, nav {
 ol, ul {list-style: none;}
 address {font-style: normal;}
 html {scroll-behavior: smooth;}
-a { text-decoration: none; cursor: pointer;}
+a { text-decoration: none; cursor: pointer; }
 
 
 img {display: block; width: 100%;}
 
-:root { 
-    --yellow: hsla(60, 70%, 70%, 1);
-	--lightblue: hsla(180, 60%, 70%, 1);
-	--green: hsla(110, 60%, 60%, 1);
-    --black:  hsl(0, 0%, 0%);
-    --white: hsl(0, 0%, 100%);
-    --grey: hsl(0, 0%, 50%);
 
+:root { 
+    --clr-pri: hsla(60, 70%, 70%, 1);
+	--clr-sec: hsla(180, 60%, 70%, 1);
+	--clr-ter: hsla(110, 60%, 60%, 1);
+    --tint-pri: hsla(60, 30%, 70%, 1);
+	--tint-sec: hsla(180, 30%, 70%, 1);
+	--tint-ter: hsla(110, 30%, 60%, 1);
+    --black:  hsl(0, 0%, 0%);
+    --darkgrey: hsl(0, 0%, 30%);
+    --grey: hsl(0, 0%, 50%);
+    --lightgrey: hsl(0, 0%, 80%);
+    --white: hsl(0, 0%, 100%);
+    
     --accent: var(--clr-sec);
 
+    --txt-pri: 'Raleway', sans-serif;
+    --txt-sec: 'Raleway', sans-serif;
+    --txt-ter: 'Raleway', sans-serif;
+
+    /* https://www.fluid-type-scale.com */
+    --txt-xxs: clamp(0.75rem, -0.25vw + 0.81rem, 0.61rem);
+    --txt-xs: clamp(0.83rem, -0.16vw + 0.87rem, 0.74rem);
+    --txt-sm: clamp(0.91rem, -0.04vw + 0.92rem, 0.89rem);
+    --txt-base: clamp(1rem, 0.11vw + 0.97rem, 1.06rem);
+    --txt-md: clamp(1.1rem, 0.32vw + 1.02rem, 1.27rem);
+    --txt-lg: clamp(1.21rem, 0.58vw + 1.06rem, 1.53rem);
+    --txt-xl: clamp(1.33rem, 0.92vw + 1.1rem, 1.84rem);
+    --txt-xxl: clamp(1.46rem, 1.34vw + 1.13rem, 2.2rem);
+    --txt-xxxl: clamp(1.61rem, 1.88vw + 1.14rem, 2.64rem);
+    
     --txt-light: 200;
-    --txt-weight: 400;
+    --txt-normal: 400;
+    --txt-medium: 600;
     --txt-bold: 700;
 
-    --txt-display: 4.3rem;
-    --txt-xxl: 3.583rem;
-    --txt-xl: 2.488rem;
-    --txt-l: 1.728rem;
-    --txt-m: 1.44rem;
-    --txt-standard: 1.05rem;
-    --txt-s: 0.833rem;
-    --txt-xs: 0.694rem;
-    --txt-xxs: 0.579rem;
+    --txt-spacing-sm: .02em;
+    --txt-spacing-base: .03em;
+    --txt-spacing-lg: .05em;
 
-    --bor-r-l: 1.5rem;
-    --bor-r-m: .75rem; 
-    --bor-r-sm: .5rem; 
-    --bor-r-xs: .25rem;
-    --bor-r-circle: 50%;
-    --bor-w-hairline: 0.5px;
-    --bor-w: 1px;
-    --bor-w-thin: 2px;
-    --bor-w-thick: 5px;
-  
-    --sp-xxl: 3rem;
-    --sp-xl: 2rem;
-    --sp-l: 1.5rem;   
-    --sp-m: 1rem; 
-    --sp: .75rem;
-    --sp-s: .5rem;
-    --sp-xs: .25rem;
-    --sp-xxs: .125rem;
-    
-    --dur-instantly: 0;
-    --dur-immediately: 0.1s;
-    --dur-quickly: 0.2s;
-    --dur-promptly: 0.5s;
-    --dur-slowly: 1s;
+    --txt-height-xs: 1;
+    --txt-height-sm: 1.25;
+    --txt-height-base: 1.5;
+    --txt-height-lg: 1.5;
+    --txt-height-xl: 1.75;
 
-    --lh-standard: 1.55;
-    --lh-short: 1.2;
+    --bor-radius-xs: 50%;  
+    --bor-radius-sm: .25rem;
+    --bor-radius-base: .5rem; 
+    --bor-radius-lg: .75rem;   
+    --bor-radius-xl: 1.5rem;
 
-    --bg-pri: var(--white);
-    --bg-sec: var(--black);
-    --bg-ter: var(--yellow);
-    --txt-pri: var(--black);
-    --txt-sec: var(--white);
-    --txt-ter: var(--grey);
-    --link-pri: var(--black);
-    --link-pri-hover: var(--grey);
-    --link-sec: var(--white);
-    --link-sec-hover: var(--grey);
-    --link-ter: var(--grey);
-    --link-ter-hover: var(--black);
-    
-    --nav-height: 2rem;    
+    --bor-width-xs:  1px;
+    --bor-width-sm: 2px;
+    --bor-width-base: 2px;
+    --bor-width-lg: 3px;
+    --bor-width-xl: 4px;
 
+    --space-xxs: .25rem;
+    --space-xs: .5rem;
+    --space-sm: .75rem;
+    --space-base: 1rem; 
+    --space-lg: 1.5rem;      
+    --space-xl: 2rem;
+    --space-xxl: 3rem;
+
+
+    /* Utility */
+    --nav-height: 2rem;
+    --page-padding: 2rem;           
 }
+
 
 /* dark Mode --------------------------------------*/
 
 html[data-theme='light'] {
-    --bg-pri: var(--white);
-    --bg-sec: var(--black);
-    --bg-ter: var(--yellow);
-    --txt-pri: var(--black);
-    --txt-sec: var(--white);
-    --txt-ter: var(--grey);
-    --link-pri: var(--black);
-    --link-pri-hover: var(--grey);
-    --link-sec: var(--white);
-    --link-sec-hover: var(--grey);
-    --link-ter: var(--grey);
-    --link-ter-hover: var(--black);
+    --dm-black: var(--black);
+    --dm-grey: var(--grey);
+    --dm-white: var(--white);
+    --dm-black-hover: var(--grey);
+    --dm-white-hover: var(--black);
+    --dm-grey-hover: var(--white);
 }
 
 html[data-theme='dark'] {
-    --bg-pri: var(--black);
-    --bg-sec: var(--white);
-    --bg-ter: var(--yellow);
-    --txt-pri: var(--white);
-    --txt-sec: var(--black);
-    --txt-ter: var(--grey);
-    --link-pri: var(--white);
-    --link-pri-hover: var(--grey);
-    --link-sec: var(--black);
-    --link-sec-hover: var(--grey);
-    --link-ter: var(--grey);
-    --link-ter-hover: var(--grey);
+    --dm-black: var(--white);
+    --dm-grey: var(--grey);
+    --dm-white: var(--black);
+    --dm-black-hover: var(--grey);
+    --dm-white-hover: var(--grey);
+    --dm-grey-hover: var(--black);
 }
 
 [data-theme='light'] .theme-icon-light,
@@ -121,27 +113,81 @@ html[data-theme='dark'] {
 
 /* Base -----------------------------------------*/
 
-html {
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    font-weight: normal;
-    letter-spacing: 0.1em;
-    line-height: 1.5rem;
-    color: var(--text-clr-pri);
+html, body ,h1, h2, h3, h4, h5, h6, p {
+    font-family: var(--txt-pri);
+    font-size: var(--txt-base);
+    line-height: var(--txt-height-base);
+    font-weight: var(--txt-normal);
+    letter-spacing: var(--txt-spacing-base);
+  }
+
+.text-xxs {
+    font-size: var(--txt-xxs);
+    line-height: var(--txt-height-sm);
+    letter-spacing:var(--txt-spacing-lg);
+    max-width: 80ch;
 }
 
-body {
-    min-height: 100vh;
-    margin-top: var(--nav-height);
-    background: var(--bg-pri);
+.text-xs {
+    font-size: var(--txt-xs);
+    line-height: var(--txt-height-sm);
+    letter-spacing:var(--txt-spacing-lg);
+    max-width: 80ch;
+}
+
+.text-sm, .heading-xs {
+    font-size: var(--txt-sm);
+    line-height: var(--txt-height-sm);
+    letter-spacing: var(--txt-spacing-lg);
+    max-width: 80ch;
+}
+
+.text, .heading-sm  {
+    font-size: var(--txt-base);
+    line-height: var(--txt-height-base);
+    letter-spacing: var(--txt-spacing-base);
+    max-width: 80ch;
+}
+
+.text-lg, .heading {
+    font-size: var(--txt-lg);
+    line-height: var(--txt-height-base);
+    letter-spacing: var(--txt-spacing-base);
+    max-width: 80ch;
+}
+
+.text-xl, .heading-lg {
+    font-size: var(--txt-xl);
+    line-height: var(--txt-height-base);
+    letter-spacing: var(--txt-spacing-base);
+    max-width: 80ch;
+}
+
+.text-xxl, .heading-xl {
+    font-size: var(--txt-xxl);
+    line-height: var(--txt-height-lg);
+    letter-spacing: var(--txt-spacing-sm);
+    max-width: 80ch;
+}
+
+.heading-xs,
+.heading-sm,
+.heading,
+.heading-lg,
+.heading-xl,
+.heading-xxl {
+  font-weight: var(--txt-bold);
+}
+
+.caption {
+    font-size: var(--txt-xxs);
+    font-weight: var(--txt-bold);
+    letter-spacing: var(--txt-spacing-lg);
+    line-height: var(--txt-height-base);    
 }
 
 
-/* Base -----------------------------------------*/
-
-
-
-.text {
-    font-size: 1rem;
-    color: var(--txt-pri);
+.sticky {
+    position: sticky;
+    top:0;
 }

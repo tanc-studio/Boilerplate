@@ -10,31 +10,35 @@
 .wrap-flush,
 .wrap,
 .wrap-md {
-    padding: 0 2rem;
+    padding: 0 var(--page-padding);
     margin: 0 auto;
 }
 
 .wrap {
-    max-width: 1700px;
+    max-width: 1400px;
 }
 
 .wrap-md {
     max-width: 800px;
 }
 
+body {
+    /* margin-top: 6rem; */
+    background: var(--dm-white);
+} 
 
 
 /* Header ----------------------------------------*/
 
 .header {
-    height: var(--nav-height);
     position: fixed;
+    height: var(--nav-height);
     top: 0;
     left: 0;
     right: 0;
     z-index: 10;
-    background-color: var(--grey);
-}
+    background-color: var(--dm-grey);
+}e
 
 .header__inner {
     height: 100%;
@@ -50,45 +54,51 @@
 .nav {
     height: var(--nav-height);
     width: 100%;
-    padding: 0 1rem;
+    padding-right: 1rem;
     display: flex;
-    justify-content: end;
-    background-color: red;
+    justify-content: space-between;
+    background-color: var(--dm-black);
 }
 
 .nav__links {
-    background-color: antiquewhite;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;    
 }
 
 .nav__link {
-    color: var(--link-sec);
+    color: var(--dm-white);
 }
 
-.nav__link:hover {
-    color: var(--link-sec-hover);
-}
+.logo-circle {
+    height: var(--nav-height);
+    width: var(--nav-height);
+    background: var(--clr-pri);
+    border-radius: 50vw;
 
+}
 
 
 /* main ------------------------------------------*/
 .main {
+
     height: 100%;
+    /* padding-top: var(--nav-height); */
 }
 
 
-
-
-
-/* Site Footer -----------------------------------*/
+/* Footer -----------------------------------*/
 
 .footer {
-    display: none;
+    height: var(--nav-height);
     padding: .5rem 0;
     position: Fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: var(--bg-sec);
+    background: var(--dm-black);
+    background: red;
 }
 
 .footer__inner {
@@ -101,19 +111,6 @@
 .footer__links {
     display: flex;
     gap: .5rem;
-}
-
-
-/* Icons --------------------------------------- */
-
-.icon {
-    width: 100%;
-    height: 100%;
-    fill: var(--sh-pri);
-}
-
-.icon-darkmode {
-    fill: var(--bg-pri);
 }
 
 
@@ -139,11 +136,63 @@ button {
     height: 2rem;
 }
 
+.btn--darkmode {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    background: var(--dm-white);
+}
 
-/*  ----------------------------------- */
+
+/* Icons --------------------------------------- */
+
+.icon {
+    width: 100%;
+    height: 100%;
+    fill: var(--black);
+}
+
+.icon--darkmode {
+    fill: var(--dm-black);
+}
 
 
 
 
+.main--stylesguide {
+    display: flex;
+}
 
+.stylesguide__header {
+    height: 5rem;
+}
+
+.stylesguide__nav {
+    /* padding-top: 6rem; */
+    min-width: 12rem;;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.stylesguide__section {
+    border-top: solid 1px var(--dm-black);
+    /* padding-top: 1rem; */
+    /* margin-bottom: 2rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+.stylesguide__heading {
+    /* margin-bottom: 4rem; */
+}
+
+.stylesguide__example {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 

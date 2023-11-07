@@ -7,7 +7,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=1.4.2"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
   <link rel="stylesheet" href="css/base.css">
@@ -30,76 +32,42 @@
   <title>Test</title>
   <meta name="description" content=""/>
 </head>
-<body>
+<body> 
   <div class="display-none" w3-include-html="includes/svg-page.html"></div>
-  <header class="header"> 
-    <div class="header__inner wrap">
-        <nav class="nav">        
-          <a class="logo" href="index.html">
-            <!-- <svg class="icon-logo"><use href="#logo" xlink:href="#logo"></use></svg> -->
-          </a>
-          <div class="nav__section">
-            <div class="nav__links">
-              <a class="nav__link" href="" target="_blank">Link</a> 
-              <a class="nav__link" href="" target="_blank">Link</a> 
-              <a class="nav__link" href="" target="_blank">Link</a> 
-              <a class="nav__link" href="" target="_blank">Link</a> 
-            </div>
-          </div> 
-        </div>
-      </nav>        
-    </div>
-  </header>
-
-  <!-- TOF  -->
-  <div id="tofNavtray" class="tof-navtray">
-    <div class="tof-navtray__inner">
-      <a href="#">About</a>
-      <a href="#">About</a>
-      <a href="#">About</a>
-      <a href="#">About</a>
-      <a href="#">About</a>
-    </div>
-  </div>
-  <div class="tof-nav">
-    <nav class="tof-menu">
-      <div id="tofBurger" onclick="toggleNav()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav> 
-    <button class="btn-round" id="darkmodeToggle" class="btn" type="button">
-      <span class="theme-icon-light display-none">
-        <svg class="icon icon-darkmode" height="100%" width="100%" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"/> </svg>
-      </span>
-      <span class="theme-icon-dark display-none">
-        <svg class="icon icon-darkmode" height="100%" width="100%" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"/> </svg> 
-      </span>
-    </button>
-  </div>
-
-   <!-- Main  -->
+  <div w3-include-html="includes/site-header.html"></div>
+  <div id="tofNavtray" class="tof-navtray"><div w3-include-html="includes/site-tof.html"></div></div> <!-- TOF  -->
+  <nav class="tof-menu"><div id="tofBurger" onclick="toggleNav()"><span></span><span></span><span></span></div> </nav> 
+  <button class="btn btn-round btn--darkmode" id="darkmodeToggle" type="button">
+    <span class="theme-icon-light display-none">
+      <svg class="icon icon--darkmode" height="100%" width="100%" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"/> </svg>
+    </span>
+    <span class="theme-icon-dark display-none">
+      <svg class="icon icon--darkmode" height="100%" width="100%" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"/> </svg> 
+    </span>
+  </button>
   <main class="main" id="tofSidenav"> 
     <div class="main__inner wrap">
-    <h2>Sidenav Push Example</h2>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nam eveniet! Magnam, fuga esse! Temporibus porro ad, nulla impedit provident animi assumenda. Nesciunt delectus, repudiandae eum quos repellat cum in eius recusandae aut laboriosam tempore, sequi impedit corporis, rerum veritatis odit ipsum non autem. Placeat.
-  </main>
-</div> 
+      <!------------>
+
+      <h2>Sidenav Push Example</h2>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nam eveniet! Magnam, fuga esse! Temporibus porro ad, nulla impedit provident animi assumenda. Nesciunt delectus, repudiandae eum quos repellat cum in eius recusandae aut laboriosam tempore, sequi impedit corporis, rerum veritatis odit ipsum non autem. Placeat.
+      
 
 
 
-  <footer class="footer">
-    <div class="footer__inner wrap">
-      <div class="footer__section"></div>
-      <div class="footer__section"></div>
+
+
+
+
+      <!------------>
+      
+
     </div>
-  </footer>
+  </main>
+  <div w3-include-html="includes/site-footer.html"></div>
   <script>includeHTML();</script>
   <script src="js/tof.js"></script>
-  <!-- Rename -->
   <script src="js/component.js"></script>
 </body>
-
 </html>
 
