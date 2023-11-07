@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/site.css">
   <link rel="stylesheet" href="css/tof.css">
@@ -36,7 +37,7 @@
   <div w3-include-html="includes/site-header.html"></div>
   <div id="tofNavtray" class="tof-navtray"><div w3-include-html="includes/site-tof.html"></div></div> <!-- TOF  -->
   <nav class="tof-menu"><div id="tofBurger" onclick="toggleNav()"><span></span><span></span><span></span></div> </nav> 
-  <button class="btn btn-round btn--darkmode" id="darkmodeToggle" type="button">
+  <button class=" btn-round btn--darkmode" id="darkmodeToggle" type="button">
     <span class="theme-icon-light display-none">
       <svg class="icon icon--darkmode" height="100%" width="100%" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"/> </svg>
     </span>
@@ -46,28 +47,132 @@
   </button>
   <main class="main" id="tofSidenav"> 
      <div class="main__inner main--stylesguide wrap">
-      <!------------>
 
-      <div class="stylesguide sticky">
-          <nav class="stylesguide__nav sticky">
-            <a class="stylesguide__link link" href="#stylesguide-text-sizes">Body Text </a>
-            <a class="stylesguide__link link" href="#stylesguide-text-sizes">Body Text </a>
-            <a class="stylesguide__link link" href="#stylesguide-text-sizes">Body Text </a>
-            <a class="stylesguide__link link" href="#stylesguide-text-sizes">Body Text </a>
-            <a class="stylesguide__link link" href="#stylesguide-text-sizes">Body Text </a>
+      <div class="stylesguide">
+          <nav class="stylesguide__nav sticky" id="stylesNav">
+            <a class="stylesguide__link link-sm" href="#stylesguide-typefaces">Typefaces</a>
+            <a class="stylesguide__link link-sm" href="#stylesguide-text">Text</a>
+            <a class="stylesguide__link link-sm" href="#stylesguide-headings">Headings</a>
+            <a class="stylesguide__link link-sm" href="#stylesguide-paragraphs">Pargraphs</a>
+            <a class="stylesguide__link link-sm" href="#stylesguide-links">links</a>
+            <a class="stylesguide__link link-sm" href="#stylesguide-palette">Palette</a>
+            <a class="stylesguide__link link-sm" href="#stylesguide-icons">Icons</a>
+            <a class="stylesguide__link link-sm" href="#stylesguide-buttons">Buttons</a>
+            <a class="stylesguide__link link-sm" href="#stylesguide-forms">Forms</a>
           </nav>
       </div> 
 
       <section class="stylesguide">
-        <div class="stylesguide__header">
-          <header class="stylesguide__header">
-            <h1 class="heading-lg">Style Guides</h1>     
-          </header>
-        </div>
+        <header class="stylesguide__header">
+          <h1 class="heading">Style Sheet</h1>     
+        </header>
 
         <div class="stylesguide__content">
 
-          <section class="stylesguide__section">
+          <!-- Typefaces -->
+          <section class="stylesguide__section" id="stylesguide-typefaces">
+            <h2 class="stylesguide__heading heading-sm">Typefaces</h2> 
+            <div class="stylesguide__grid">
+              <figure class="stylesguide__example stylesguide--typeface-A">
+                <p class="text-base">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z </p>
+                <p class="text-base">a b c d e f g h i j k l m n o p q r s t u v w x y z </p>
+                <p class="text-base">1 2 3 4 5 6 7 8 9 10 ! @ $ £ & ^ % </p>
+                <figcaption class="stylesguide__caption"><h3 class="caption">Typeface A</h3></figcaption>                                
+              </figure>
+
+              <figure class="stylesguide__example stylesguide--typeface-B">
+                <p class="text-base">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z </p>
+                <p class="text-base">a b c d e f g h i j k l m n o p q r s t u v w x y z </p>
+                <p class="text-base">1 2 3 4 5 6 7 8 9 10 ! @ $ £ & ^ % </p>
+                <figcaption class="stylesguide__caption"><h3 class="caption">Typeface B</h3></figcaption>                                
+              </figure>
+
+              <figure class="stylesguide__example stylesguide--typeface-C">
+                <p class="text-base">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z </p>
+                <p class="text-base">a b c d e f g h i j k l m n o p q r s t u v w x y z </p>
+                <p class="text-base">1 2 3 4 5 6 7 8 9 10 ! @ $ £ & ^ % </p>
+                <figcaption class="stylesguide__caption"><h3 class="caption">Typeface C</h3></figcaption>                                
+              </figure>
+
+              <figure class="stylesguide__example stylesguide--typeface-D">
+                <p class="text-base">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z </p>
+                <p class="text-base">a b c d e f g h i j k l m n o p q r s t u v w x y z </p>
+                <p class="text-base">1 2 3 4 5 6 7 8 9 10 ! @ $ £ & ^ % </p>
+                <figcaption class="stylesguide__caption"><h3 class="caption">Typeface D</h3></figcaption>                                
+              </figure>
+
+              <figure class="stylesguide__example stylesguide--typeface-E">
+                <p class="text-base">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z </p>
+                <p class="text-base">a b c d e f g h i j k l m n o p q r s t u v w x y z </p>
+                <p class="text-base">1 2 3 4 5 6 7 8 9 10 ! @ $ £ & ^ % </p>
+                <figcaption class="stylesguide__caption"><h3 class="caption">Typeface E</h3></figcaption>                                
+              </figure>
+
+              <figure class="stylesguide__example stylesguide--typeface-F">
+                <p class="text-base">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z </p>
+                <p class="text-base">a b c d e f g h i j k l m n o p q r s t u v w x y z </p>
+                <p class="text-base">1 2 3 4 5 6 7 8 9 10 ! @ $ £ & ^ % </p>
+                <figcaption class="stylesguide__caption"><h3 class="caption">Typeface F</h3></figcaption>                                
+              </figure>
+          </div>
+          </section>
+          
+          <!-- Text -->
+          <section class="stylesguide__section" id="stylesguide-text">
+            <h2 class="stylesguide__heading heading-sm">Text Sizes</h2> 
+                <figure class="stylesguide__example">
+                  <p class="text-xxs">This size text</p>
+                  <figcaption class="stylesguide__caption"><h3 class="caption">Text-xxs</h3></figcaption>                                
+                </figure>
+                <figure class="stylesguide__example">
+                  <p class="text-xs">This size text</p>
+                <figcaption class="stylesguide__caption"><h3 class="caption">Text-xs</h3></figcaption>                                
+                </figure>
+                <figure class="stylesguide__example">
+                  <p class="text-sm">This size text</p>
+                <figcaption class="stylesguide__caption"><h2 class="caption">Text-sm</h3></figcaption>                                
+                </figure>
+                <figure class="stylesguide__example">
+                  <p class="text-base">This size text</p>
+                <figcaption class="stylesguide__caption"><h3 class="caption">Text</h3></figcaption>                                
+                </figure>
+                <figure class="stylesguide__example">
+                  <p class="text-lg">This size text</p>
+                <figcaption class="stylesguide__caption"><h3 class="caption">Text-lg</h3></figcaption>                                
+                </figure>
+                <figure class="stylesguide__example">
+                  <p class="text-xl">This size text</p>
+                <figcaption class="stylesguide__caption"><h3 class="caption">Text-xl</h3></figcaption>                                
+                </figure> 
+          </section>
+
+          <!-- Heading -->
+          <section class="stylesguide__section" id="stylesguide-headings">
+            <h2 class="stylesguide__heading heading-sm">Headings</h2>              
+            <figure class="stylesguide__example">
+              <div class="heading-xs">This is a heading</div>
+              <figcaption class="stylesguide__caption"><h3 class="caption">Heading-xs</h3></figcaption>                                
+            </figure>
+            <figure class="stylesguide__example">
+              <div class="heading-sm">This is a heading</div>
+              <figcaption class="stylesguide__caption"><h3 class="caption">Heading-sm</h3></figcaption>                                
+            </figure>
+            <figure class="stylesguide__example">
+              <div class="heading">This is a heading</div>
+              <figcaption class="stylesguide__caption"><h3 class="caption">Heading</h3></figcaption>                                
+            </figure>
+            <figure class="stylesguide__example">
+              <div class="heading-lg">This is a heading</div>
+              <figcaption class="stylesguide__caption"><h3 class="caption">Heading-lg</h3></figcaption>                                
+            </figure>
+            <figure class="stylesguide__example">
+              <div class="heading-xl">This is a heading</div>
+              <figcaption class="stylesguide__caption"><h3 class="caption">Heading-xl</h3></figcaption>                                
+            </figure>
+          </section>
+
+          <!-- Paragraphs -->
+          <section class="stylesguide__section" id="stylesguide-paragraphs">
             <h2 class="stylesguide__heading heading-sm">Body Text</h2> 
             <figure class="stylesguide__example">
               <p class="text-xxs"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum modi quaerat hic nesciunt nobis necessitatibus maiores, natus amet illum ut adipisci rem quisquam! Nostrum illo provident sit consequuntur dolorum eius sint nam dolore iure. Minus molestias tempora qui voluptates impedit inventore possimus cumque libero quaerat iste est aperiam repellat aut neque officiis nisi ipsa, quisquam autem, voluptatem quis! Dolores eaque adipisci voluptate aliquid, labore vero eius modi amet veniam?</p>
@@ -95,73 +200,178 @@
             </figure> 
           </section>
 
-          <section class="stylesguide__section">
-            <h2 class="stylesguide__heading heading-sm">Text Sizes</h2> 
+          <!-- Links -->
+          <section class="stylesguide__section" id="stylesguide-links">
+            <h2 class="stylesguide__heading heading-sm"  id="stylesguide-heading-sizes">Links</h2>              
+
             <figure class="stylesguide__example">
-              <p class="text-xxs">This size text</p>
-              <figcaption class="stylesguide__caption"><h3 class="caption">Text-xxs</h3></figcaption>                                
+              <a class="link-xs">Link</a>
+              <figcaption class="stylesguide__caption"><h3 class="caption">Link XS</h3></figcaption>                                
             </figure>
             <figure class="stylesguide__example">
-              <p class="text-xs">This size text</p>
-            <figcaption class="stylesguide__caption"><h3 class="caption">Text-xs</h3></figcaption>                                
+              <a class="link-sm">Link</a>
+              <figcaption class="stylesguide__caption"><h3 class="caption">Link SM</h3></figcaption>                                
             </figure>
             <figure class="stylesguide__example">
-              <p class="text-sm">This size text</p>
-            <figcaption class="stylesguide__caption"><h2 class="caption">Text-sm</h3></figcaption>                                
+              <a class="link">Link</a>
+              <figcaption class="stylesguide__caption"><h3 class="caption">Link</h3></figcaption>                                
             </figure>
-            <figure class="stylesguide__example">
-              <p class="text-base">This size text</p>
-            <figcaption class="stylesguide__caption"><h3 class="caption">Text</h3></figcaption>                                
-            </figure>
-            <figure class="stylesguide__example">
-              <p class="text-lg">This size text</p>
-            <figcaption class="stylesguide__caption"><h3 class="caption">Text-lg</h3></figcaption>                                
-            </figure>
-            <figure class="stylesguide__example">
-              <p class="text-xl">This size text</p>
-            <figcaption class="stylesguide__caption"><h3 class="caption">Text-xl</h3></figcaption>                                
-            </figure> 
+
           </section>
 
-          <section class="stylesguide__section">
-            <h2 class="stylesguide__heading heading-sm"  id="stylesguide-heading-sizes">Headings</h2>              
-            <figure class="stylesguide__example">
-              <div class="heading-xs">This is a heading</div>
-              <figcaption class="stylesguide__caption"><h3 class="caption">Heading-xs</h3></figcaption>                                
-            </figure>
-            <figure class="stylesguide__example">
-              <div class="heading-sm">This is a heading</div>
-              <figcaption class="stylesguide__caption"><h3 class="caption">Heading-sm</h3></figcaption>                                
-            </figure>
-            <figure class="stylesguide__example">
-              <div class="heading">This is a heading</div>
-              <figcaption class="stylesguide__caption"><h3 class="caption">Heading</h3></figcaption>                                
-            </figure>
-            <figure class="stylesguide__example">
-              <div class="heading-lg">This is a heading</div>
-              <figcaption class="stylesguide__caption"><h3 class="caption">Heading-lg</h3></figcaption>                                
-            </figure>
-            <figure class="stylesguide__example">
-              <div class="heading-xl">This is a heading</div>
-              <figcaption class="stylesguide__caption"><h3 class="caption">Heading-xl</h3></figcaption>                                
-            </figure>
+          <!-- Palette -->
+          <section class="stylesguide__section" id="stylesguide-palette">
+            <h2 class="stylesguide__heading heading-sm"  id="stylesguide-heading-sizes">Palette</h2> 
+            <div class="stylesguide__grid">
+              <figure class="stylesguide__example">
+                <div class="stylesguide__swatch stylesguide--swatch-1"></div>
+                <figcaption class="stylesguide__caption"><h3 class="caption">Primary Colour</h3></figcaption>                                
+              </figure>             
+              <figure class="stylesguide__example">
+                <div class="stylesguide__swatch stylesguide--swatch-2"></div>
+                <figcaption class="stylesguide__caption"><h3 class="caption">Secondary Colour</h3></figcaption>                                
+              </figure>
+              <figure class="stylesguide__example">
+                <div class="stylesguide__swatch stylesguide--swatch-4"></div>
+                <figcaption class="stylesguide__caption"><h3 class="caption">Tertiary Colour</h3></figcaption>                                
+              </figure>
+              <figure class="stylesguide__example">
+                <div class="stylesguide__swatch stylesguide--swatch-5"></div>
+                <figcaption class="stylesguide__caption"><h3 class="caption">Primary Tint</h3></figcaption>                                
+              </figure>
+              <figure class="stylesguide__example">
+                <div class="stylesguide__swatch stylesguide--swatch-5"></div>
+                <figcaption class="stylesguide__caption"><h3 class="caption">Secondary Tint</h3></figcaption>                                
+              </figure>
+              <figure class="stylesguide__example">
+                <div class="stylesguide__swatch stylesguide--swatch-6"></div>
+                <figcaption class="stylesguide__caption"><h3 class="caption">Tertiary Tint</h3></figcaption>                                
+              </figure>
+              <figure class="stylesguide__example">
+                <div class="stylesguide__swatch stylesguide--swatch-7"></div>
+                <figcaption class="stylesguide__caption"><h3 class="caption">Black Shade</h3></figcaption>                                
+              </figure>
+              <figure class="stylesguide__example">
+                <div class="stylesguide__swatch stylesguide--swatch-8"></div>
+                <figcaption class="stylesguide__caption"><h3 class="caption">Dark Grey Shade</h3></figcaption>                                
+              </figure>
+              <figure class="stylesguide__example">
+                <div class="stylesguide__swatch stylesguide--swatch-9"></div>
+                <figcaption class="stylesguide__caption"><h3 class="caption">Grey Shade</h3></figcaption>                                
+              </figure>
+              <figure class="stylesguide__example">
+                <div class="stylesguide__swatch stylesguide--swatch-10"></div>
+                <figcaption class="stylesguide__caption"><h3 class="caption">Off White Shade</h3></figcaption>                                
+              </figure>
+              <figure class="stylesguide__example">
+                <div class="stylesguide__swatch stylesguide--swatch-11"></div>
+                <figcaption class="stylesguide__caption"><h3 class="caption">White Shade</h3></figcaption>                                
+              </figure>
+              
+            </div>             
           </section>
 
+          <!-- Icons Font -->
+          <!-- https://fonts.google.com/icons?icon.set=Material+Symbols&icon.style=Rounded -->
+          <section class="stylesguide__section" id="stylesguide-icons">
+            <h2 class="stylesguide__heading heading-sm"  id="stylesguide-heading-sizes">Icons</h2>  
+            <div class="stylesguide__grid stylesguide__grid--sm">
+              <figure class="stylesguide__example">
+                <span class="material-symbols-rounded size-20">settings</span>
+                <figcaption class="stylesguide__caption"><h3 class="caption">Icon SM</h3></figcaption>                                
+              </figure>
+              <figure class="stylesguide__example">
+                <span class="material-symbols-rounded size-24">settings</span>
+                <figcaption class="stylesguide__caption"><h3 class="caption">Icon MD </h3></figcaption>                                
+              </figure>
+              <figure class="stylesguide__example">
+                <span class="material-symbols-rounded size-40">settings</span>
+                <figcaption class="stylesguide__caption"><h3 class="caption">Icon LG</h3></figcaption>                                
+              </figure>
+            </div>
+          </section>
+            
+          <!-- buttons -->
+          <section class="stylesguide__section" id="stylesguide-buttons">
+            <h2 class="stylesguide__heading heading-sm"  id="stylesguide-heading-sizes">Buttons</h2>  
+            <div class="stylesguide__grid stylesguide__grid--sm">  
 
+              <figure class="stylesguide__example">
+                <div class="heading-xs">
+                  <button class="btn  btn--xs">Click Me</button>
+                </div>
+                <figcaption class="stylesguide__caption"><h3 class="caption">Button XS</h3></figcaption>                                
+              </figure>   
+              <figure class="stylesguide__example">
+                <div class="heading-xs">
+                  <button class="btn btn--sm">Click Me</button>
+                </div>
+                <figcaption class="stylesguide__caption"><h3 class="caption">Button SM</h3></figcaption>                                
+              </figure>        
+              <figure class="stylesguide__example">
+                <div class="heading-xs">
+                  <button class="btn">Click Me</button>
+                </div>
+                <figcaption class="stylesguide__caption"><h3 class="caption">Button</h3></figcaption>                                
+              </figure>
+              <figure class="stylesguide__example">
+                <div class="heading-xs">
+                  <button class="btn btn--outline btn--icon">Click Me<span class="material-symbols-rounded size-20">settings</span></button>
+                </div>
+                <figcaption class="stylesguide__caption"><h3 class="caption">Button With Icon</h3></figcaption>                                
+              </figure> 
+
+
+
+            </div>
+          </section>
+
+          <!-- Forms -->
+          <section class="stylesguide__section" id="stylesguide-forms">
+            <h2 class="stylesguide__heading heading-sm"  id="stylesguide-heading-sizes">Forms</h2>              
+            <figure class="stylesguide__example">
+              
+              <form class="form text-xs">
+                <h2 class="form__title">Form Example</h2>
+                
+                <div class="form__group">
+                    <label class="form__label" for="name">Name:</label>
+                    <input class="form__input" type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form__group">
+                    <label class="form__label" for="gender">Gender:</label>
+                    <div class="form__radio-group">
+                        <input class="form__radio" type="radio" id="male" name="gender" value="male">
+                        <label class="form__radio-label" for="male">Male</label>
+                        
+                        <input class="form__radio" type="radio" id="female" name="gender" value="female">
+                        <label class="form__radio-label" for="female">Female</label>
+                        
+                        <input class="form__radio" type="radio" id="other" name="gender" value="other">
+                        <label class="form__radio-label" for="other">Other</label>
+                    </div>
+                </div>
+                
+                <div class="form__group">
+                    <label class="form__label">Subscribe to newsletter:</label>
+                    <div class="form__toggle">
+                        <input class="form__toggle-input" type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                        <label class="form__toggle-label" for="newsletter"></label>
+                    </div>
+                </div>
+                
+                <div class="form__group">
+                    <button class="form__btn btn" type="submit">Submit</button>
+                </div>
+
+              </form>
+                          
+            </figure>
+          </section>
 
         </div>
       </section>
-
-          <!-- <svg class="icon"><use href="#icon-arrow" xlink:href="#icon-arrow"></use></svg> -->
-        <!-- <svg class="icon"><use href="#icon-times" xlink:href="#icon-times"></use></svg> -->
-        <!-- <svg class="icon"><use href="#icon-plus" xlink:href="#icon-plus"></use></svg> -->
-        <!-- <svg class="icon"><use href="#icon-minus" xlink:href="#icon-minus"></use></svg> -->
-        <!-- <svg class="icon"><use href="#icon-sun" xlink:href="#icon-sun"></use></svg> -->
-        <!-- <svg class="icon"><use href="#icon-wheel" xlink:href="#icon-wheel"></use></svg>   -->
-        <!-- <div class="box"></div> -->
-
-
-      
 
       <!------------>    
     </div> 
