@@ -80,7 +80,6 @@ e .header__inner {
     width: var(--nav-height);
     background: var(--clr-pri);
     border-radius: 50vw;
-
 }
 
 
@@ -88,7 +87,12 @@ e .header__inner {
 .main {
     height: 100%;
     margin-top: var(--nav-height);
+    color: var(--dm-black);
 }
+
+/* .main__inner {
+    color: var(--dm-black);
+} */
 
 .main--stylesguide {
     margin-top: calc(var(--nav-height) * -1);
