@@ -96,6 +96,13 @@ e .header__inner {
     gap: 2rem;
 }
 
+.main--stylesguide {
+    margin-top: calc(var(--nav-height) * -1);
+    display: flex;
+    gap: 2rem;
+}
+
+
 
 
 /* Footer --------------------------------------*/
