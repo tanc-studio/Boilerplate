@@ -90,6 +90,10 @@ e .header__inner {
     color: var(--dm-black);
 }
 
+/* .main__inner {
+    color: var(--dm-black);
+} */
+
 .main--stylesguide {
     margin-top: calc(var(--nav-height) * -1);
     display: flex;
