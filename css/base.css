@@ -82,11 +82,12 @@ img {display: block; width: 100%;}
     --space-xl: 2rem;
     --space-xxl: 3rem;
 
-
     /* Utility */
     --nav-height: 2rem;
     --page-padding: 2rem;           
 }
+
+
 
 /* dark Mode --------------------------------------*/
 
@@ -116,6 +117,7 @@ html[data-theme='dark'] {
 [data-theme='dark'] .theme-icon-dark {
     display: block !important;
 }
+
 
 
 

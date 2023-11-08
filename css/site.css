@@ -32,7 +32,7 @@ body {
 }
 
 
-/* Header ----------------------------------------*/
+/* Header ---------------------------------------*/
 
 .header {
     position: fixed;
@@ -53,7 +53,7 @@ e .header__inner {
 }
 
 
-/* Nav ----------------------------------------*/
+/* Nav ------------------------------------------*/
 
 .nav {
     height: var(--nav-height);
@@ -84,17 +84,24 @@ e .header__inner {
 }
 
 
-/* main ------------------------------------------*/
+/* main ----------------------------------------*/
 .main {
     height: 100%;
+    margin-top: var(--nav-height);
+}
+
+.main--stylesguide {
+    margin-top: calc(var(--nav-height) * -1);
+    display: flex;
+    gap: 2rem;
 }
 
 
-/* Footer -----------------------------------*/
+
+/* Footer --------------------------------------*/
 
 .footer {
     height: var(--nav-height);
-    padding: .5rem 0;
     position: Fixed;
     bottom: 0;
     left: 0;
@@ -104,10 +111,12 @@ e .header__inner {
 }
 
 .footer__inner {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: .5rem;
+    background-color: var(--clr-pri);
 }
 
 .footer__links {
@@ -116,202 +125,8 @@ e .header__inner {
 }
 
 
-/* Icons --------------------------------------- */
 
-.icon {
-    width: 100%;
-    height: 100%;
-    fill: var(--black);
-}
-
-.icon--darkmode {
-    fill: var(--dm-black);
-}
-
-.material-symbols-rounded {
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 0;
-}
-
-span.size-20 {
-    font-size: 20px;
-    font-variation-settings: 'OPSZ' 20;
-}
-
-span.size-24 {
-    font-size: 24px;
-    font-variation-settings: 'OPSZ' 24;
-}
-
-span.size-40 {
-    font-size: 40px;
-    font-variation-settings: 'OPSZ' 40;
-}
-
-span.size-48 {
-    font-size: 48px;
-    font-variation-settings: 'OPSZ' 48;
-}
-
-
-
-
-/* Buttons ------------------------------------- */
-button {
-    padding: 0;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    cursor: pointer;
-    text-wrap: nowrap;
-}
-
-.btn {
-    display: inline-block;
-    font-size: 1rem;
-    text-decoration: none;
-    text-align: center;
-    padding: .75rem 2rem;
-    border: none;
-    border-radius: var(--bor-radius-xl);
-    color: var(--black);
-    background: var(--clr-pri);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    /* Add a transition effect */
-}
-
-.btn-round {
-    display: inline-block;
-
-    border-radius: 50vw;
-}
-
-.btn--darkmode {
-    width: 2rem;
-    height: 2rem;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;
-    background: var(--dm-white);
-}
-
-
-
-.btn:hover {
-    background: var(--clr-sec);
-}
-
-.no:hover {
-    background: var(--clr-pri);
-    transition: none;
-}
-
-.btn--sm {
-    font-size: .9rem;
-    padding: .65rem 1.5rem;
-}
-
-.btn--xs {
-    font-size: .75rem;
-    padding: .5rem 1.25rem;
-}
-
-.btn--outline {
-    border: solid 1px var(--dm-black);
-}
-
-.btn--icon {
-    display: flex;
-    gap: .2em;
-}
-
-
-
-
-/* Form --------------------------------------- */
-.form {
-    max-width: 40rem;
-    padding: 3rem;
-    background-color: var(--dm-offwhite);
-
-}
-
-.form__title {
-    margin-bottom: 2rem;
-}
-
-.form__group {
-    margin-bottom: 1rem;
-}
-
-.form__label {
-    display: block;
-    margin-bottom: 1rem;
-}
-
-.form__input {
-    width: 100%;
-    padding: 1rem;
-}
-
-.form__radio-group {
-    display: flex;
-    gap: 1rem;
-}
-
-.form__radio {
-    display: none;
-}
-
-.form__radio-label {
-    text-align: center;
-    padding: 1rem;
-    border-radius: 50vw;
-    flex: 1;
-    background: var(--clr-pri);
-    cursor: pointer;
-    
-}
-
-.form__toggle {
-    display: flex;
-    align-items: center;
-}
-
-.form__toggle-input {
-    display: none;
-}
-
-.form__toggle-label {
-    width: 2rem;
-    height: 2rem;
-    background: var(--clr-ter);
-    border-radius: 50vw;
-    cursor: pointer;
-    position: relative;
-    transition: background-color 0.3s ease;
-}
-
-.form__toggle-input:checked+.form__toggle-label {
-    background: var(--clr-pri);
-}
-
-
-
-
-
-
-
-
-.main--stylesguide {
-    display: flex;
-    gap: 2rem;
-}
+/* Page - Style Guide --------------------------*/
 
 .stylesguide__link:first-of-type {
     border-top: solid 1px var(--dm-black);
@@ -329,6 +144,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: end;
+    color: var(--dm-black);
 }
 
 .stylesguide__header .heading {
@@ -419,3 +235,12 @@ button {
 .stylesguide--swatch-11 {background: var(--white); outline: black .5px solid;}
 
 
+@media only screen and (max-width: 900px) {
+    .stylesguide__nav {
+        display: none;
+    }
+
+    .main--stylesguide {
+        gap: 0;
+    }
+  }
